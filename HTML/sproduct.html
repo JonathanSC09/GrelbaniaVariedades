@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width={device-width}, initial-scale=1.0">
+    <title>Grelbania Variedades</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+<body>
+    <!-- NAVEGADOR -->
+    <header id="main">
+        <a>Grelbania Variedades</a>
+        <nav>
+            <ul id="navbar">
+                <li><a href="/index.html">Home</a></li>
+                <li><a class="active" href="/HTML/shop.html">Products</a></li>
+                <li><a href="/HTML/about.html">About Us</a></li>
+                <li><a href="/HTML/contact.html">Contact Us</a></li>
+                <li><a href="/HTML/cart.html" id="lg-bag"><i class="far fa-shopping-cart"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </nav>
+        <div id="mobile">
+            <a href="/HTML/cart.html"><i class="far fa-shopping-cart"></i></a>
+            <i id="bar" class="fas fa-bars"></i>
+        </div>
+    </header>
+    <!-- NAVEGADOR END -->
+    <!-- SINGLE PRODUCT -->
+    <section id="prodetails" class="section-p1">
+        <div class="single-image">
+            <img src="/IMG/Truss/Blond/Shampoo.png" width="100%" id="main-img" alt="">
+            <div class="small-group">
+                <div class="small-col">
+                    <img src="/IMG/Truss/Blond/Shampoo.png" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-col">
+                    <img src="/IMG/Truss/Blond/Conditioner.png" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-col">
+                    <img src="/IMG/Truss/Blond/Mask.png" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single-details">
+            <h4>Blond Shampoo</h4>
+            <h2>$75.00</h2>
+            <input type="number" value="1">
+            <button class="normal">Add Cart</button>
+            <h4>Product Details</h4>
+            <span>Champú especial con mezclablend de pigmentos violeta para neutralizar tonos 
+                anaranjados en cabellos rubios y decolorados y tonos amarillentos en cabellos 
+                canosos.Recupera la fuerza, resistencia y flexibilidad natural de las hebras 
+                de cabello. Aplique, masaje suavemente, deje actuar 2 minutos y enjuague. Repita</span>
+        </div>
+    </section>
+    <!-- SINGLE PRODUCT END -->
+    <!-- NOTICIAS -->
+    <section id="news" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For News</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+    <!-- NOTICIAS END -->
+    <!-- FOOTER -->
+    <footer class="section-p1">
+        <div class="col">
+            <h4>CONTACT</h4>
+            <p><strong>Address:</strong> Kola Shaler 500mts al sur, Urbanización Altos de la sabana, Casa #1, 14082</p>
+            <p><strong>Phone:</strong> +505 8787-5909</p>
+            <p><strong>Opening Hours:</strong> Sunday-Friday (8:00am - 17:00pm)</p>
+        </div>
+        <div class="col">
+            <h4>ABOUT</h4>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+        </div>
+        <div class="col">
+            <h4>MY ACCOUNT</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col">
+            <h4>FOLLOW US</h4>
+            <div class="icon">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img class="pay" src="/IMG/Payment.png" alt="">
+        </div>
+        <div class="copy">
+            <p>Copyright © 2023, Grelbania Variedades, All rights reserved. See our terms of use and privacy notice.</p>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    <script>
+        var mainimage = document.getElementById("main-img");
+        var smallimage = document.getElementsByClassName("small-img");
+        smallimage[0].onclick = function(){
+            mainimage.src = smallimage[0].src;
+        }
+        smallimage[1].onclick = function(){
+            mainimage.src = smallimage[1].src;
+        }
+        smallimage[2].onclick = function(){
+            mainimage.src = smallimage[2].src;
+        }
+    </script>
+    <script src="/JS/script.js"></script>
+</body>
+</html>
